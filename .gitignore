@@ -1,0 +1,14 @@
+# Ignore Python environment variable files
+.env
+.env.*
+
+# Common Python cache
+__pycache__/
+*.pyc
+
+# VSCode settings (optional)
+.vscode/
+
+# Mac and Windows
+.DS_Store
+Thumbs.db
