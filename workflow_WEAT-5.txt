@@ -1,0 +1,92 @@
+WEAT-5: Implement Auto-Location Weather Widget
+Description: Build a widget that detects the user’s location (GPS/IP) and displays real-time weather data from OpenWeatherMap’s {{current}} API.
+
+h4. *Acceptance Criteria*
+
+✅ *Core Functionality (50%)*
+
+* *+20%* Auto-fetches weather data using location access.
+* *+20%* Displays temp/humidity/wind/icon without errors.
+* *+10%* Handles GPS/IP failures gracefully (manual input allowed).
+
+✅ *UX Polish (30%)*
+
+* *+15%* Loading state (spinner/skeleton UI).
+* *+15%* Unit toggles (°C/°F, km/h/mph) persist via localStorage.
+
+✅ *Innovation (20%)* _(Bonus)_
+
+* *+10%* Animated weather icons (e.g., rain drops, cloud pulses).
+* *+10%* Contextual tips (e.g., "Rainy → Don't forget your umbrella!", "Sunny → High UV today, wear sunscreen!").
+
+Workflow:
+**WEAT-5: Implement Auto-Location Weather Widget – Task Breakdown & Workflow**
+
+---
+
+**1. Setup & Planning**
+- [ ] Review OpenWeatherMap {{current}} API docs and obtain API key.
+- [ ] Define widget component structure (UI/logic separation).
+- [ ] Set up basic project scaffolding (if not already present).
+
+---
+
+**2. Core Functionality (50%)**
+
+- [ ] **Location Detection**
+  - [ ] Implement location detection using browser GPS API.
+  - [ ] Fallback to IP-based geolocation if GPS fails.
+- [ ] **Weather Data Fetching**
+  - [ ] Fetch current weather data using detected coordinates.
+  - [ ] Handle API errors and invalid responses.
+- [ ] **Display Weather Info**
+  - [ ] Render temperature, humidity, wind speed, and weather icon.
+  - [ ] Ensure data updates in real-time (on load/refresh).
+- [ ] **Error Handling & Manual Input**
+  - [ ] Show user-friendly error if location access fails.
+  - [ ] Allow manual city/location input as fallback.
+
+---
+
+**3. UX Polish (30%)**
+
+- [ ] **Loading State**
+  - [ ] Show spinner or skeleton UI while fetching location and weather data.
+- [ ] **Unit Toggles**
+  - [ ] Add toggle for temperature (°C/°F).
+  - [ ] Add toggle for wind speed (km/h/mph).
+  - [ ] Persist user preferences using localStorage.
+
+---
+
+**4. Innovation (20%)** _(Bonus)_
+
+- [ ] **Animated Weather Icons**
+  - [ ] Integrate animated SVG or Lottie icons based on weather condition.
+- [ ] **Contextual Tips**
+  - [ ] Display context-aware tips/messages based on current weather (e.g., rain, sun, wind).
+
+---
+
+**5. Testing & QA**
+- [ ] Write unit and integration tests for location, API, and UI logic.
+- [ ] Test on multiple browsers and devices.
+- [ ] Validate error handling and manual input flow.
+
+---
+
+**6. Documentation & Handoff**
+- [ ] Document component usage and configuration.
+- [ ] Update README with setup instructions and API key usage.
+- [ ] Demo widget to team/stakeholders for feedback.
+
+---
+
+**Workflow Summary**
+1. Plan & set up API access.
+2. Implement location and weather fetching.
+3. Build UI for displaying weather and handling errors.
+4. Add UX polish: loading states, unit toggles, persistence.
+5. Implement bonus features: animated icons, contextual tips.
+6. Test thoroughly and document.
+7. Demo and hand off for review.

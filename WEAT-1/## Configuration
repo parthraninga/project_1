@@ -1,0 +1,3 @@
+- Edit `DEFAULT_CITIES` in `src/components/WeatherDashboard.tsx` to change default cities.
+
+## Testing

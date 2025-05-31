@@ -1,0 +1,91 @@
+WEAT-4: Add City Search with Autocomplete
+Description: Implement a city search feature with autocomplete using OpenWeatherMap {{find}} endpoint.
+
+*Acceptance Criteria*
+✅ *Core Functionality (50%)*
+
+* *+20%* Returns city matches.
+* *+20%* Clicking a city suggestion loads weather data instantly.
+* *+10%* Recent searches persist after page refresh.
+
+✅ *UX (30%)*
+
+* *+30%* Clear "No results" state (e.g., "No cities found for 'Xyz'").
+
+✅ *Innovation (20%)* _(Bonus)_
+
+* *+10%* Fuzzy search (e.g., "san fran" → "San Francisco").
+* *+10%* Auto-detect and correct typos (e.g., "New Yrok" → "New York").
+
+Workflow:
+**WEAT-4: Add City Search with Autocomplete — Task Breakdown & Workflow**
+
+---
+
+### 1. **Setup & Planning**
+- Review OpenWeatherMap {{find}} endpoint documentation.
+- Define data model for city suggestions and recent searches.
+- Plan UI components: search input, suggestions dropdown, "No results" message, recent searches list.
+
+---
+
+### 2. **Core Functionality (50%)**
+
+#### a. City Search & Suggestions (+20%)
+- [ ] Build search input component.
+- [ ] On input change, query OpenWeatherMap {{find}} endpoint.
+- [ ] Parse and display city matches as suggestions in dropdown.
+
+#### b. Load Weather Data on Selection (+20%)
+- [ ] On suggestion click, fetch and display weather data for selected city.
+- [ ] Ensure weather data loads instantly after selection.
+
+#### c. Persist Recent Searches (+10%)
+- [ ] Store recent searches in local storage.
+- [ ] On page load, retrieve and display recent searches.
+- [ ] Update recent searches list after each new search.
+
+---
+
+### 3. **UX (30%)**
+
+#### a. "No Results" State (+30%)
+- [ ] Detect when no city matches are returned.
+- [ ] Display clear message: e.g., “No cities found for 'Xyz'”.
+
+---
+
+### 4. **Innovation (20%) — Bonus**
+
+#### a. Fuzzy Search (+10%)
+- [ ] Integrate fuzzy matching library or implement simple fuzzy logic.
+- [ ] Match user input to closest city names (e.g., "san fran" → "San Francisco").
+
+#### b. Typo Correction (+10%)
+- [ ] Implement typo detection/correction (e.g., using Levenshtein distance or similar).
+- [ ] Suggest corrected city names for common misspellings.
+
+---
+
+### 5. **Testing & QA**
+- [ ] Write unit tests for search, suggestions, and persistence logic.
+- [ ] Test UX for all states (results, no results, recent searches).
+- [ ] Test fuzzy search and typo correction with various inputs.
+
+---
+
+### 6. **Review & Deployment**
+- [ ] Code review with team.
+- [ ] Merge to main branch.
+- [ ] Deploy to staging, verify all acceptance criteria.
+- [ ] Release to production.
+
+---
+
+**Workflow Summary:**
+1. Plan & design components.
+2. Implement core search & autocomplete.
+3. Add weather loading and recent searches persistence.
+4. Improve UX with "No results" state.
+5. (Bonus) Add fuzzy search & typo correction.
+6. Test thoroughly, review, and deploy.

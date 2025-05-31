@@ -1,0 +1,94 @@
+WEAT-3: Implement 5-Day Weather Forecast
+Description: Develop a 5-day weather forecast component using OpenWeatherMap's {{forecast}} endpoint with temperature trends and precipitation data.
+
+*Acceptance Criteria*
+
+✅ *Core Functionality (50%)*
+
+* *+20%* Displays accurate 5-day forecast
+* *+20%* Correctly calculates/renders daily min/max temps from 3-hour data
+* *+10%* Unit toggle (°C/°F) works consistently across all components
+
+✅ *UX/UI (30%)*
+
+* *+15%* Clear visual hierarchy (current day vs. future days)
+* *+15%* Loading state during API fetch
+
+✅ *Innovation (20%)* _(Bonus)_
+
+* *+10%* Precipitation probability visualization (e.g., water drop icons scaling with %)
+* *+10%* "Feels like" temperature comparison for each day
+
+Workflow:
+**WEAT-3: Implement 5-Day Weather Forecast — Task Breakdown & Workflow**
+
+---
+
+### 1. **API Integration**
+- [ ] Review OpenWeatherMap {{forecast}} endpoint documentation
+- [ ] Obtain/validate API key and set up secure storage
+- [ ] Create service to fetch 5-day/3-hour interval forecast data
+
+---
+
+### 2. **Data Processing**
+- [ ] Parse 3-hour interval data into daily groups (5 days)
+- [ ] Calculate daily min/max temperatures from 3-hour data
+- [ ] Extract precipitation probability for each day
+- [ ] Extract "feels like" temperature for each day
+
+---
+
+### 3. **Component Development**
+- [ ] Design and implement weather forecast component structure
+- [ ] Display 5-day forecast with clear separation of days
+- [ ] Highlight current day visually (visual hierarchy)
+- [ ] Render daily min/max temperatures
+- [ ] Show precipitation probability (as text or icon placeholder)
+- [ ] Display "feels like" temperature alongside actual temperature
+
+---
+
+### 4. **Unit Toggle Feature**
+- [ ] Implement °C/°F toggle logic
+- [ ] Ensure toggle updates all relevant temperature displays instantly
+- [ ] Maintain unit preference across all components
+
+---
+
+### 5. **UX/UI Enhancements**
+- [ ] Apply visual hierarchy: emphasize current day, differentiate future days
+- [ ] Add loading state/spinner while fetching data
+- [ ] Ensure responsive and accessible design
+
+---
+
+### 6. **Innovation (Bonus)**
+- [ ] Visualize precipitation probability (e.g., water drop icons sized by %)
+- [ ] Show "feels like" vs. actual temperature comparison for each day
+
+---
+
+### 7. **Testing & QA**
+- [ ] Unit test data processing (min/max, grouping, unit conversion)
+- [ ] Component/UI tests for forecast rendering, toggle, and loading state
+- [ ] Manual QA for visual hierarchy and bonus features
+- [ ] Cross-browser and device testing
+
+---
+
+### 8. **Documentation & Review**
+- [ ] Document component usage and API integration
+- [ ] Add code comments where necessary
+- [ ] Peer code review and address feedback
+
+---
+
+### 9. **Deployment**
+- [ ] Merge to main branch after approval
+- [ ] Monitor for issues post-deployment
+
+---
+
+**Workflow:**  
+1. API Integration → 2. Data Processing → 3. Component Development → 4. Unit Toggle → 5. UX/UI → 6. Innovation → 7. Testing → 8. Documentation/Review → 9. Deployment

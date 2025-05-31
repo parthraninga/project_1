@@ -1,0 +1,77 @@
+WEAT-1: Implement Multi-City Weather Comparison Table
+Description: Develop a comparison table allowing users to view weather metrics for 3+ cities simultaneously using OpenWeatherMap API data.
+
+h4. *Acceptance Criteria*
+
+✅ *Core Functionality (50%)*
+
+* *+20%* Displays 3+ cities' data within 15 seconds
+* *+20%* All columns show real API data (no mock values)
+* *+10%* Maintains sort state during data refreshes
+
+✅ *UX (30%)*
+
+* *+15%* Clear visual differentiation between cities
+* *+15%* Empty state when no cities selected
+
+✅ *Innovation (20%)* _(Bonus)_
+
+* *+10%* "Delta" mode showing differences from first city
+* *+10%* Mini sparkline graphs for temp trends
+
+Workflow:
+**Task Breakdown & Workflow for WEAT-1: Implement Multi-City Weather Comparison Table**
+
+---
+
+### 1. **API Integration**
+- Research OpenWeatherMap API endpoints for required weather metrics.
+- Create utility functions to fetch weather data for multiple cities in parallel.
+- Implement error handling and loading states.
+
+### 2. **Table Component**
+- Design and scaffold a responsive comparison table component.
+- Map API data to table columns (e.g., temperature, humidity, etc.).
+- Ensure support for 3+ cities dynamically.
+- Implement sorting functionality on columns.
+
+### 3. **Performance**
+- Optimize data fetching to display all cities’ data within 15 seconds.
+- Add loading indicators and timeout handling.
+
+### 4. **Data Refresh & State Management**
+- Implement periodic or manual data refresh.
+- Maintain current sort state during refreshes.
+
+### 5. **UX Enhancements**
+- Apply clear visual differentiation (e.g., colors, borders, headers) between cities.
+- Design and implement an empty state UI when no cities are selected.
+- Ensure accessibility and responsiveness.
+
+### 6. **Bonus Innovation Features**
+- **Delta Mode:**  
+  - Add toggle for "Delta" mode.
+  - Calculate and display differences in metrics compared to the first city.
+- **Mini Sparklines:**  
+  - Integrate sparkline graphs for temperature trends in each city’s row.
+
+### 7. **Testing & QA**
+- Unit test data fetching and table rendering.
+- Test sorting, empty state, and delta mode.
+- Validate performance and UX acceptance criteria.
+
+### 8. **Documentation**
+- Update README with usage instructions and feature descriptions.
+- Document API integration and any configuration steps.
+
+---
+
+**Workflow Summary:**
+1. Set up API integration and data utilities.
+2. Build and style the comparison table.
+3. Implement sorting and data refresh logic.
+4. Add visual differentiation and empty state.
+5. Develop bonus features (delta mode, sparklines).
+6. Test all features and edge cases.
+7. Document usage and deployment steps.
+8. Review, demo, and deploy.

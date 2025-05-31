@@ -1,0 +1,13 @@
+## Features
+
+- Compare weather metrics for 3+ cities using live OpenWeatherMap data
+- Sortable, responsive table
+- Delta mode: See differences from the first city
+- Mini sparklines for temperature trends
+- Visual differentiation between cities
+- Empty state UI when no cities selected
+
+## Setup
+
+1. Clone the repo
+2. Add your OpenWeatherMap API key to `.env`:
